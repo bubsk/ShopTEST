@@ -1,0 +1,5 @@
+tests\TestBase.class
+page\objects\LogRegPage.class
+page\objects\HomePage.class
+tests\TestNewEmail.class
+tests\TestExistingEmail.class
