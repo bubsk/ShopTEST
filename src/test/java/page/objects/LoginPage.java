@@ -2,14 +2,10 @@ package page.objects;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import tests.TestBase;
 
 import static org.testng.Assert.assertTrue;
 
@@ -38,15 +34,14 @@ public class LoginPage {
     public void clickLoginButton(){
         SubmitLoginButton.click();
     }
-    public void emailFieldlogin(){
+    public void emailFieldlogin(String loginLog){
         loginEmailField.click();
-        loginEmailField.sendKeys("neveUsedWrongEmail@test.com");
+        loginEmailField.sendKeys(loginLog);
     }
-    RegistrationPage dupa = new RegistrationPage(driver);
 
-    public void PasswordWrong(){
+    public void Password(String password){
         passwordFieldLogin.click();
-        passwordFieldLogin.sendKeys("wrongPassword");
+        passwordFieldLogin.sendKeys(password);
     }
 
 }

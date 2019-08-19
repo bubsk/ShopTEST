@@ -1,12 +1,7 @@
 package tests;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import page.objects.AlertDangerAssertion;
-import page.objects.HomePage;
-import page.objects.LoginPage;
-import page.objects.RegistrationPage;
+import page.objects.*;
 
 import static org.testng.Assert.assertTrue;
 
@@ -31,8 +26,8 @@ public class LoginFail extends TestBase {
     signIn.clickSignIN();
 
     LoginPage login = new LoginPage(driver);
-    login.emailFieldlogin();
-    login.PasswordWrong();
+    login.emailFieldlogin("neveUsedWrongEmail@test.com");
+    login.Password("WrongPassword23");
     login.clickLoginButton();
     AlertDangerAssertion alertemptyfield = new AlertDangerAssertion(driver);
     alertemptyfield.waitForErrorRegLog();

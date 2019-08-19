@@ -3,6 +3,7 @@ package tests;
 import org.testng.annotations.Test;
 import page.objects.HomePage;
 import page.objects.RegistrationPage;
+import page.objects.TestBase;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertFalse;
@@ -22,17 +23,16 @@ public class RegistrationFail extends TestBase {
         typeemail.waitForPage("create_account_error");
 
     }
+
     @Test
     // test fail with empty fields durning registration
-    public void newEmailEmptyFields(){
+    public void newEmailEmptyFields() {
         HomePage signIn = new HomePage(driver);
         signIn.clickSignIN();
 
-
-        String userName = "" + (int) (Math.random() * Integer.MAX_VALUE);
-        String emailID = "User" + userName + "@gmail.com";
-
         RegistrationPage TestExisting = new RegistrationPage(driver);
+        String emailID = TestExisting.newRandomMail();
+        TestExisting.typeEmailCreatingAccount(emailID);
         TestExisting.typeEmailCreatingAccount(emailID);
         TestExisting.clickSubmitButton();
         TestExisting.waitForPage("account-creation_form");
