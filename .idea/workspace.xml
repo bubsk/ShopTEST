@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af05f115-b701-43c0-8686-096c04d66e8c" name="Default Changelist" comment="" />
+    <list default="true" id="af05f115-b701-43c0-8686-096c04d66e8c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/ShoppingProcessPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/ShoppingProcessPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BuyProcessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BuyProcessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/page/objects/ShoppingProcessPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/objects/ShoppingProcessPages.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/page/objects/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/objects/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BuyProcessTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BuyProcessTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,10 +51,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -190,7 +199,8 @@
       <workItem from="1560446243648" duration="234000" />
       <workItem from="1560447200996" duration="554000" />
       <workItem from="1560447967957" duration="352000" />
-      <workItem from="1566133217983" duration="10551000" />
+      <workItem from="1566133217983" duration="15121000" />
+      <workItem from="1566327780643" duration="15086000" />
     </task>
     <task id="LOCAL-00001" summary="Added Pass login and base Shopping Process">
       <created>1566232701682</created>
@@ -199,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566232701682</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Pass login and base Shopping Process">
+      <created>1566253993437</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1566253993437</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -213,6 +230,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>

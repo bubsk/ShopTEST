@@ -16,8 +16,8 @@ public class TestBase {
     }
     @AfterMethod
     public void afterTest() {
-        driver.close();
-        driver.quit();
+       // driver.close();
+     //   driver.quit();
     }
 
 }
