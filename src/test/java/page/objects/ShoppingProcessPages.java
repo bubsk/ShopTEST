@@ -5,21 +5,17 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
-import javax.swing.*;
-import java.lang.reflect.Array;
 import java.util.List;
-import java.util.concurrent.TimeUnit;
-
-import static org.openqa.selenium.By.xpath;
 
 public class ShoppingProcessPages {
-   private Logger logger = LogManager.getRootLogger();
+    private Logger logger = LogManager.getRootLogger();
     private WebDriver driver;
 
     public ShoppingProcessPages(WebDriver driver) {
@@ -27,13 +23,17 @@ public class ShoppingProcessPages {
         PageFactory.initElements(driver, this);
 
     }
-    @FindBy(className ="sf-with-ul")
+
+    @FindBy(className = "sf-with-ul")
     private WebElement typeEmailField;
 
-    @FindBy(className = "product_list grid row")
+    @FindBy(xpath = "//*[@id=\"center_column\"]/ul")
     private WebElement productList;
 
-    @FindBy(xpath = "//a[@class='button ajax_add_to_cart_button btn btn-default']")
+    @FindBy(xpath = "//*[@id=\"center_column\"]/ul/li[1]/div/div[1]/div/a[1]/img")
+    private WebElement clickOnClothes;
+
+    @FindBy(xpath = "//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/div[2]/a[1]")
     private WebElement addToCardButtonClick;
 
     @FindBy(id = "total_price")
@@ -69,25 +69,28 @@ public class ShoppingProcessPages {
         logger.info("Clicked on Women Button");
     }
 
+    public void getClothes(){
+    List<WebElement> clothesCount = productList.findElements(By.xpath("//*[@id=\"center_column\"]/ul/li"));
+        if (clothesCount.size() != 7){
+            logger.info("Number of product for women is changed and now is not 7!");
+            Assert.fail();
 
-    public void Getclothes(){
-        List<WebElement> productName = productList.findElements(xpath("//h5"));
-        for (WebElement element: productName){
-            System.out.println(element.getText());
+        }else {
+            System.out.println("The number of clothes for women =" + " " + clothesCount.size());
         }
 
     }
     public void addToCard() {
+        Actions action = new Actions(driver);
+        action.moveToElement(clickOnClothes).perform();
         addToCardButtonClick.click();
         logger.info("Added product to card");
     }
 
-    public String checkTotalValueOfOrderInSummaryTab(){
-        return totalPriceOfOrder.getText();
+    public void checkTotalValueOfOrderInSummaryTab() {
+        String totalPrice= totalPriceOfOrder.getText();
+        System.out.println(totalPrice);
     }
-
-
-
     public void proceedToCheckOUT() {
         WebDriverWait wait = new WebDriverWait(driver, 15);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a/span")));
@@ -99,26 +102,32 @@ public class ShoppingProcessPages {
         proceedToCheckoutButtonFinal.click();
         logger.info("Proceeded to checkout signIN page");
     }
-    public void proceedToCheckoutAddress(){
+
+    public void proceedToCheckoutAddress() {
         proceedToCheckoutAddressPage.click();
         logger.info("Proceeded to checkout Address Page");
     }
 
-    public void approveTermsAndConditionsButton(){
+    public void approveTermsAndConditionsButton() {
         termsButton.click();
         proceedTocheckoutSHipping.click();
         logger.info("Checkbox selected");
     }
-    public void payByBank(){
+
+    public void payByBank() {
         payByBankWire.click();
         logger.info("Bank Wire payment clicked");
     }
-    public void finalConfirmationPaymentClickButton(){
+
+    public void finalConfirmationPaymentClickButton() {
         finalConfirmationOfPayment.click();
         logger.info("Last oonfirmation of payment");
     }
 
-    public String getLastPrice(){
-        return getPriceWhenOrderIsPaid.getText();
+    public void getLastPrice() {
+        String PriceWhenOrderIsPaid = getPriceWhenOrderIsPaid.getText();
+        Assert.assertEquals(getPriceWhenOrderIsPaid.getText(), "$19.25" , "Verify price");
+        logger.info("Checked if price is correct");
+
     }
 }

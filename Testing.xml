@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite thread-count="1" verbose="1" name="Test" annotations="JDK" parallel="tests">
+
+    <test name="LoginPass">
+        <classes>
+            <class name="tests.LoginPass"/>
+        </classes>
+    </test>
+    <test name="LoginFail">
+        <classes>
+            <class name="tests.LoginFail"/>
+        </classes>
+    </test>
+    <test name="BuyProcessTest">
+        <classes>
+            <class name="tests.BuyProcessTest"/>
+        </classes>
+    </test>
+    <test name="RegistrationPass">
+        <classes>
+            <class name="tests.RegistrationPass"/>
+        </classes>
+    </test>
+    <test name="RegistrationFail">
+        <classes>
+            <class name="tests.RegistrationFail" />
+        </classes>
+    </test>
+
+</suite>

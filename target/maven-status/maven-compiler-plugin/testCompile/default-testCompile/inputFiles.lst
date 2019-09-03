@@ -1,5 +1,11 @@
-C:\Users\gosæ\IdeaProjects\ShopTEST\src\test\java\page\objects\HomePage.java
-C:\Users\gosæ\IdeaProjects\ShopTEST\src\test\java\tests\TestNewEmail.java
-C:\Users\gosæ\IdeaProjects\ShopTEST\src\test\java\tests\TestBase.java
-C:\Users\gosæ\IdeaProjects\ShopTEST\src\test\java\tests\TestExistingEmail.java
-C:\Users\gosæ\IdeaProjects\ShopTEST\src\test\java\page\objects\LogRegPage.java
+C:\Users\Bubsky\IdeaProjects\ShopTEST\src\test\java\tests\BuyProcessTest.java
+C:\Users\Bubsky\IdeaProjects\ShopTEST\src\test\java\tests\RegistrationPass.java
+C:\Users\Bubsky\IdeaProjects\ShopTEST\src\test\java\tests\LoginPass.java
+C:\Users\Bubsky\IdeaProjects\ShopTEST\src\test\java\page\objects\LoginPage.java
+C:\Users\Bubsky\IdeaProjects\ShopTEST\src\test\java\page\objects\TestBase.java
+C:\Users\Bubsky\IdeaProjects\ShopTEST\src\test\java\page\objects\HomePage.java
+C:\Users\Bubsky\IdeaProjects\ShopTEST\src\test\java\page\objects\RegistrationPage.java
+C:\Users\Bubsky\IdeaProjects\ShopTEST\src\test\java\page\objects\AlertDangerAssertion.java
+C:\Users\Bubsky\IdeaProjects\ShopTEST\src\test\java\tests\LoginFail.java
+C:\Users\Bubsky\IdeaProjects\ShopTEST\src\test\java\page\objects\ShoppingProcessPages.java
+C:\Users\Bubsky\IdeaProjects\ShopTEST\src\test\java\tests\RegistrationFail.java

@@ -2,10 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af05f115-b701-43c0-8686-096c04d66e8c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Testing.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/page/objects/ContactObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/ContactUS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/ShoppingProcessPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/ShoppingProcessPages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/page/objects/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/page/objects/TestBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/BuyProcessTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BuyProcessTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-tests.TestExistingEmail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-tests.TestNewEmail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/Surefire test.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/page/objects/ShoppingProcessPages.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/objects/ShoppingProcessPages.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/page/objects/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/page/objects/TestBase.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/tests/BuyProcessTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/tests/BuyProcessTest.class" afterDir="false" />
@@ -22,12 +50,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>xpat</find>
-      <find>typeEmailCreatingAccount</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +92,8 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG.BuyProcessTest.buySomething">
-    <configuration name="BuyProcessTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="x" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.x" />
       <module name="ShopTEST" />
       <extension name="coverage">
         <pattern>
@@ -78,11 +101,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.BuyProcessTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -98,6 +116,24 @@
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.BuyProcessTest" />
       <option name="METHOD_NAME" value="buySomething" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContactUS.sendMessageToSupport" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ShopTEST" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.ContactUS" />
+      <option name="METHOD_NAME" value="sendMessageToSupport" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -141,38 +177,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationPass.newEmail" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="ShopTEST" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="page.objects.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.RegistrationPass" />
-      <option name="METHOD_NAME" value="newEmail" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="TestNG.RegistrationPass.newEmail" />
       <item itemvalue="TestNG.LoginPass.LoginPass" />
       <item itemvalue="TestNG.BuyProcessTest.buySomething" />
-      <item itemvalue="TestNG.BuyProcessTest" />
       <item itemvalue="TestNG.LoginPass.LoginPass2" />
+      <item itemvalue="TestNG.ContactUS.sendMessageToSupport" />
+      <item itemvalue="Application.x" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.BuyProcessTest.buySomething" />
+        <item itemvalue="TestNG.ContactUS.sendMessageToSupport" />
+        <item itemvalue="Application.x" />
         <item itemvalue="TestNG.LoginPass.LoginPass2" />
         <item itemvalue="TestNG.LoginPass.LoginPass" />
-        <item itemvalue="TestNG.BuyProcessTest" />
-        <item itemvalue="TestNG.RegistrationPass.newEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -200,7 +218,10 @@
       <workItem from="1560447200996" duration="554000" />
       <workItem from="1560447967957" duration="352000" />
       <workItem from="1566133217983" duration="15121000" />
-      <workItem from="1566327780643" duration="15086000" />
+      <workItem from="1566327780643" duration="20107000" />
+      <workItem from="1566732061972" duration="3329000" />
+      <workItem from="1566918934594" duration="1273000" />
+      <workItem from="1566932587271" duration="15929000" />
     </task>
     <task id="LOCAL-00001" summary="Added Pass login and base Shopping Process">
       <created>1566232701682</created>
@@ -216,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566253993437</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Finished process of buying product without Asserts">
+      <created>1566424664661</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1566424664661</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -236,7 +264,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -247,6 +277,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Added Pass login and base Shopping Process" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Pass login and base Shopping Process" />
+    <MESSAGE value="Finished process of buying product without Asserts" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished process of buying product without Asserts" />
   </component>
 </project>

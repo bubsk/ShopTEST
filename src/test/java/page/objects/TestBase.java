@@ -13,6 +13,7 @@ public class TestBase {
         driver = new ChromeDriver();
 
         driver.navigate().to("http://automationpractice.com/index.php");
+        driver.manage().window().maximize();
     }
     @AfterMethod
     public void afterTest() {

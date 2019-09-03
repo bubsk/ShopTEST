@@ -1,5 +1,11 @@
-tests\TestBase.class
-page\objects\LogRegPage.class
+tests\BuyProcessTest.class
+page\objects\AlertDangerAssertion.class
+tests\LoginPass.class
+page\objects\LoginPage.class
+tests\LoginFail.class
 page\objects\HomePage.class
-tests\TestNewEmail.class
-tests\TestExistingEmail.class
+page\objects\RegistrationPage.class
+page\objects\ShoppingProcessPages.class
+tests\RegistrationPass.class
+tests\RegistrationFail.class
+page\objects\TestBase.class

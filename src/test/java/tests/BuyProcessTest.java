@@ -15,13 +15,13 @@ public class BuyProcessTest extends TestBase {
 
         HomePage signIn = new HomePage(driver);
         signIn.clickSignIN();
-
         LoginPage login = new LoginPage(driver);
         login.emailFieldlogin("testingTest@gmail.com");
         login.Password("testtest");
         login.clickLoginButton();
         ShoppingProcessPages shoppingProcessPage = new ShoppingProcessPages(driver);
         shoppingProcessPage.clickOnWomenButtonShop();
+        shoppingProcessPage.getClothes();
         shoppingProcessPage.addToCard();
         shoppingProcessPage.proceedToCheckOUT();
         shoppingProcessPage.checkTotalValueOfOrderInSummaryTab();
@@ -31,6 +31,7 @@ public class BuyProcessTest extends TestBase {
         shoppingProcessPage.payByBank();
         shoppingProcessPage.finalConfirmationPaymentClickButton();
         shoppingProcessPage.getLastPrice();
+
 
     }
 }
